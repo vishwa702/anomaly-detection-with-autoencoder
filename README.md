@@ -48,20 +48,6 @@ jupyter notebook "Anomaly Detection with Autoencoder.ipynb"
 
 2. **Run the cells sequentially** to execute the anomaly detection pipeline.
 
-## Example Code Snippet
-```python
-from statsmodels.tsa.seasonal import seasonal_decompose
-
-# Decompose time series
-decomposition = seasonal_decompose(df['value'], model='additive', period=24)
-
-# Extract trend component
-df['trend'] = decomposition.trend
-
-# Detect anomalies (replace with actual LSTM-based detection)
-threshold = df['trend'].mean() + 2 * df['trend'].std()
-df['anomaly'] = df['trend'] > threshold
-```
 
 ## Results & Insights
 - **Seasonal spikes and trends in taxi demand are well captured.**
