@@ -29,7 +29,7 @@ The dataset contains:
 
 4. **Visualization**
    - Plot the **trend component** with detected anomalies.
-   - Mark anomalies on **residuals** and **trend + residuals**.
+   - Mark anomalies against **trends** and **residuals**.
    - Provide insights on detected anomalies (e.g., holiday spikes, unusual demand drops).
 
 ## Installation & Dependencies
